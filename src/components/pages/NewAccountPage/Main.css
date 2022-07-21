@@ -1,0 +1,50 @@
+.invalid {
+  border:1px solid red !important;
+ }
+ input, textarea {
+  outline: none !important;
+  box-shadow: none !important; 
+}
+
+.saving__dropdown{
+  margin-top: 1rem;
+
+}
+
+.saving__button__text{
+padding-right: 5.8rem;
+margin-left: 2rem;
+}
+
+ .newAccountPage__form{
+  background-color: white;
+  width: 100%;
+
+ }
+
+ .ui.form .fields.form__form {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+max-width: 40%;
+margin: auto;
+ }
+
+ .button{
+  margin-top: 0.5rem;
+ }
+
+ /* Tablets */
+@media screen and (max-width: 1080px) {
+    .newAccountPage__div{
+      grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices */
+/* 
+@media screen and (max-width: 600px) {
+    .newAccountPage__div{
+        margin-left: 3rem;
+    }
+} */

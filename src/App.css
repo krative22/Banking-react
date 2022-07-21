@@ -1,0 +1,38 @@
+/***    General     ***/
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif
+}
+
+body {
+    margin: 0 auto;
+
+}
+
+.m-5-auto {
+    margin: 5rem auto
+}
+
+.primary-button {
+    margin-top: 5rem;
+    margin-right: 1rem;
+    padding: .6rem;
+    width: 10rem;
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .5s;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 0.75rem;
+}
+
+.primary-button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.75rem;
+}
