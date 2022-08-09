@@ -7,10 +7,12 @@ import { accounts } from "../../../atom/accountsAtom";
 import { useRecoilState } from "recoil";
 
 export default function HomePage() {
-  const [uaccounts, setAccounts] = useRecoilState(accounts);
+  const [uaccounts] = useRecoilState(accounts);
+  console.log(uaccounts);
   const [allAccounts, setAllAccounts] = useState([]);
   useEffect(() => {
     getAccounts();
+    // eslint-disable-next-line
   }, []);
   const getAccounts = () => {
     fetch("https://62d8f0df9c8b5185c78f338a.mockapi.io/Accounts", {

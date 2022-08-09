@@ -6,7 +6,7 @@ import BackgroundImage from '../../../assets/images/bg.png'
 export default function LandingPage() {
     return (
         <header style={ HeaderStyle }>
-            <h1 className="main-title text-center">Banking</h1>
+            <h1 className="main-title text-center" data-testid = "title">Banking</h1>
             <p className="main-para text-center">meeting all your needs</p>
             <div className="buttons text-center">
                 <Link to="/login">

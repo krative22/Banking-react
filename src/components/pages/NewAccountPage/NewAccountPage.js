@@ -5,18 +5,11 @@ import { useForm } from "react-hook-form";
 import { useRecoilState } from "recoil";
 import { accounts } from "../../../atom/accountsAtom";
 import { useNavigate } from "react-router-dom";
-import { Form, Button } from "semantic-ui-react";
-
-
-
-
 
 function NewAccountPage() {
+  // eslint-disable-next-line
   const [uaccounts, setAccounts] = useRecoilState(accounts);
   const history = useNavigate();
-
-
-
 
   const {
     register,
@@ -27,20 +20,14 @@ function NewAccountPage() {
   } = useForm();
 
   const onSubmit = (data) => {
-    
     console.log(data);
-    
 
- 
-  
     const accounttype = data.accounttype;
-    addAccount(accounttype)
+    addAccount(accounttype);
 
     reset();
 
     history(-1);
-
-
   };
 
   const addAccount = (accounttype) => {
@@ -53,9 +40,6 @@ function NewAccountPage() {
       },
     ]);
   };
-
-
-
 
   return (
     <div className="container pt-5">
@@ -156,8 +140,7 @@ function NewAccountPage() {
                 aria-label="select account"
                 {...register("accounttype")}
               >
-
-                <option selected value="Savings">Savings</option>
+                <option value="Savings">Savings</option>
                 <option value="Current">Current</option>
                 <option value="Cheque">Cheque</option>
               </select>
