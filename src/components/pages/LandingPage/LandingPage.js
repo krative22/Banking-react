@@ -4,16 +4,17 @@ import './LandingPage.css'
 import BackgroundImage from '../../../assets/images/bg.png'
 
 export default function LandingPage() {
+    
     return (
         <header style={ HeaderStyle }>
             <h1 className="main-title text-center" data-testid = "title">Banking</h1>
             <p className="main-para text-center">meeting all your needs</p>
             <div className="buttons text-center">
                 <Link to="/login">
-                    <button className="primary-button">log in</button>
+                    <button className="primary-button" data-testid= "Login">log in</button>
                 </Link>
                 <Link to="/register">
-                    <button className="primary-button" id="reg_btn"><span>register </span></button>
+                    <button className="primary-button" id="reg_btn" data-testid="Register"><span>register </span></button>
                 </Link>
             </div>
         </header>
